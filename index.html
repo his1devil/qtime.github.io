@@ -1,126 +1,68 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>QTime</title>
-    <link type="text/css" rel="stylesheet" href="./index_files/default.css" />
+    <link type="text/css" rel="stylesheet" href="./index_files/default.css">
     <script type="text/javascript" src="./index_files/jquery.min.js"></script>
     <script type="text/javascript" src="./index_files/jscex.min.js"></script>
     <script type="text/javascript" src="./index_files/jscex-parser.js"></script>
     <script type="text/javascript" src="./index_files/jscex-jit.js"></script>
-    <script
-      type="text/javascript"
-      src="./index_files/jscex-builderbase.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="./index_files/jscex-async.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="./index_files/jscex-async-powerpack.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="./index_files/functions.js"
-      charset="utf-8"
-    ></script>
-    <script
-      type="text/javascript"
-      src="./index_files/love.js"
-      charset="utf-8"
-    ></script>
+    <script type="text/javascript" src="./index_files/jscex-builderbase.min.js"></script>
+    <script type="text/javascript" src="./index_files/jscex-async.min.js"></script>
+    <script type="text/javascript" src="./index_files/jscex-async-powerpack.min.js"></script>
+    <script type="text/javascript" src="./index_files/functions.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./index_files/love.js" charset="utf-8"></script>
     <style type="text/css">
-      body {
-        background-color: #fff;
-      }
+        body {
+            background-color: #fff;
+        }
     </style>
-  </head>
+</head>
 
-  <body>
+<body>
     <div id="main">
-      <div id="error">
-        本页面采用HTML5编辑，目前您的浏览器无法显示，请换成谷歌(
-        <a
-          href="http://www.google.cn/chrome/intl/zh-CN/landing_chrome.html?hl=zh-CN&brand=CHMI"
-          >Chrome</a
-        >)或者火狐(
-        <a href="http://firefox.com.cn/download/">Firefox</a
-        >)浏览器，或者其他游览器的最新版本。
-      </div>
-      <div id="wrap">
-        <!-- <div id="clock-box">
-          <div id="clock"></div>
-        </div> -->
+        <div id="error">本页面采用HTML5编辑，目前您的浏览器无法显示，请换成谷歌(
+            <a href="http://www.google.cn/chrome/intl/zh-CN/landing_chrome.html?hl=zh-CN&brand=CHMI">Chrome</a>)或者火狐(
+            <a href="http://firefox.com.cn/download/">Firefox</a>)浏览器，或者其他游览器的最新版本。</div>
+        <div id="wrap">
 
-        <canvas id="canvas" width="1100" height="680"></canvas>
-
-        <div id="code" style="margin-bottom: 20px;">
-          <!-- <span class="say"
-            >// JuJu's girl is BigFatJu's only little baby..4Ever..</span
-          > -->
-          <span class="say"><br />Dear 宝:<br /></span>
-          <span class="say">距离我们第一次相识相见已经有1300多天了</span>
-          <span class="say"
-            ><br />我已经很少回忆起那个北京深秋的晚上,
-            在天桥下第一次看到穿着白色羽绒服的你，因为在那之后的每一天，我们的感情都比原来羁绊的更深<br
-          /></span>
-          <span class="say"
-            ><br />我不是一个非常果断的人, 我总是会考虑非常多繁复的事情,
-            很多事情上我总认为自己永远也准备不好，在我们异地的那一大段时间里，我时常会做一些梦,
-            梦里我足够优秀, 带着足够的勇气坚定地站在你的面前,
-            那是你从未见过的居<br
-          /></span>
-          <span class="say"
-            ><br />现在梦醒了，我深知自己迈出了坚定的一步<br
-          /></span>
-          <span class="say"
-            ><br />你不止一次问过我，假如我们分开了，我还会像爱你一样去爱上其他人吗,
-            你也真是一个没有安全感的家伙<br
-          /></span>
-          <span class="say"
-            ><br />可是每次我都回答不知道，因为我不能想象听不到我的宝在喊胖胖，不能想象无法和我的宝继续我们的小剧场，不能想象再不能相拥入睡...<br
-          /></span>
-          <span class="say"
-            ><br />即便万般复杂情绪，我坚信的是希望你幸福的心情从没有改变过<br
-          /></span>
-          <span class="say"
-            ><br />每次你关心我的时候总希望我多和你分享，不要独自承担，这一次，我把最心底的心情都讲给你听<br
-          /></span>
-          <span class="say"
-            ><br />我的宝有着全世界最吸引我的美丽笑容<br
-          /></span>
-          <span class="say"
-            ><br />没有目的，不再问往后，我很希望，我们就这样，顺着时间的脉络，日复一日的温柔下去<br
-          /></span>
-          <span class="say"><br />我爱你, 宝贝<br /></span>
+            <div id="code">
+                <span class="say">// JuJu's girl is BigFatJu's only little baby..4Ever..</span>
+            </div>
+            <div id="clock-box">
+                居居de女孩
+                <span class="STYLE1">与</span> 大胖居
+                <span class="STYLE1">已经走过了</span>
+                <div id="clock"></div>
+            </div>
+            <canvas id="canvas" width="1100" height="680"></canvas>
         </div>
-        
-      </div>
+
     </div>
 
     <script>
-      var textAnimate = eval(
-        Jscex.compile('async', function() {
-          var together = new Date();
-          together.setFullYear(2016, 03, -5); //时间年月日
-          together.setHours(16); //小时
-          together.setMinutes(53); //分钟
-          together.setSeconds(0); //秒前一位
-          together.setMilliseconds(2); //秒第二位
 
-          $('#code')
-            .show()
-            .typewriter();
-          $('#clock-box').fadeIn(500);
-          while (true) {
-            timeElapse(together);
-            $await(Jscex.Async.sleep(1000));
-          }
-        })
-      );
+        var textAnimate = eval(Jscex.compile("async", function () {
+            var together = new Date();
+            together.setFullYear(2016, 03, -5); 			//时间年月日
+            together.setHours(16);						//小时	
+            together.setMinutes(53);					//分钟
+            together.setSeconds(0);					//秒前一位
+            together.setMilliseconds(2);				//秒第二位
 
-      textAnimate().start();
+            $("#code").show().typewriter();
+            $("#clock-box").fadeIn(500);
+            while (true) {
+                timeElapse(together);
+                $await(Jscex.Async.sleep(1000));
+            }
+        }));
+
+        textAnimate().start();
     </script>
-  </body>
+
+</body>
+
 </html>
